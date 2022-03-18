@@ -4,6 +4,7 @@ CONTAINER_NAME = ts
 .PHONY: build
 build:
 	tsc $(TSC_FLAGS)
+	mkdir -p src
 	mv src/*.js target/ 
 
 .PHONY: docker_build
