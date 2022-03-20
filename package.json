@@ -1,0 +1,23 @@
+{
+  "name": "typescriptpractice",
+  "version": "0.0.1",
+  "description": "package name for practicing typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/lemolatoon/TypeScriptPractice.git"
+  },
+  "author": "lemolatoon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lemolatoon/TypeScriptPractice/issues"
+  },
+  "homepage": "https://github.com/lemolatoon/TypeScriptPractice#readme",
+  "devDependencies": {
+    "typescript": "^4.6.2"
+  }
+}

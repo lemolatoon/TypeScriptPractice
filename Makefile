@@ -3,13 +3,11 @@ CONTAINER_NAME = ts
 
 .PHONY: build
 build:
-	tsc $(TSC_FLAGS)
-	mkdir -p target
-	mv src/*.js target/ 
+	npm run build
 
 .PHONY: docker_build
 docker_build: build
-	docker run --name $(CONTAINER_NAME) -v .:/usr/share/nginx/html:ro -d -p 8080:80 nginx
+	docker run --name $(CONTAINER_NAME) -v `pwd`:/usr/share/nginx/html:ro -d -p 8080:80 nginx
 
 .PHONY: stop
 stop:
